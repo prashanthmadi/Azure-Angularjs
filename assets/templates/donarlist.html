@@ -1,0 +1,5 @@
+<div ng-controller="DonarController as donarCtrl">
+	   <div ng-repeat="transaction in donarCtrl.recentTrans">
+	       <div>{{transaction.donatedBy}} has donated a {{transaction.item}} worth of {{transaction.cost | currency}} to {{transaction.donatedTo}}</div>
+	   </div>
+	</div>
